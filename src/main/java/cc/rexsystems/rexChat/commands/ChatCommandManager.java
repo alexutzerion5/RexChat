@@ -54,7 +54,7 @@ public class ChatCommandManager {
     public void loadCommands() {
         commands.clear();
         
-        // Load dynamic commands from config
+       
         ConfigurationSection commandsSection = plugin.getConfigManager().getConfig().getConfigurationSection("commands");
         if (commandsSection != null) {
             for (String key : commandsSection.getKeys(false)) {
@@ -66,7 +66,7 @@ public class ChatCommandManager {
             }
         }
 
-        // Register all commands
+        
         registerCommands();
     }
 
@@ -89,7 +89,7 @@ public class ChatCommandManager {
             }
         }
         
-        // Register built-in commands
+        
         registerCommand("clearchat", new ClearChatCommand(plugin));
         registerCommand("mutechat", new MuteChatCommand(plugin));
         registerCommand("rexchat", new RexChatCommand(plugin));

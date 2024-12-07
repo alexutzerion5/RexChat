@@ -16,7 +16,6 @@ public class ColorUtils {
     public static Component parseComponent(String message) {
         if (message == null) return Component.empty();
         
-        // Convert hex color codes
         Matcher matcher = HEX_PATTERN.matcher(message);
         StringBuffer buffer = new StringBuffer();
         

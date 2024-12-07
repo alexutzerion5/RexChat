@@ -33,10 +33,10 @@ public class RexChatCommand extends BaseCommand {
         }
 
         if (args[0].equalsIgnoreCase("reload")) {
-            // Reload configuration
+            
             plugin.getConfigManager().loadConfigs();
             
-            // Reload commands
+            
             plugin.getCommandManager().loadCommands();
             
             String reloadMsg = plugin.getConfigManager().getConfig()

@@ -17,13 +17,13 @@ public final class RexChat extends JavaPlugin {
     public void onEnable() {
         instance = this;
         
-        // Initialize configurations
+        
         this.configManager = new ConfigManager(this);
         this.dataManager = new DataManager(this);
         this.chatManager = new ChatManager(this);
         this.commandManager = new ChatCommandManager(this);
         
-        // Load configurations and commands
+        
         configManager.loadConfigs();
         commandManager.loadCommands();
         
