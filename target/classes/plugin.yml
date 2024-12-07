@@ -1,7 +1,7 @@
 name: RexChat
 version: '1.0-SNAPSHOT'
 main: cc.rexsystems.rexChat.RexChat
-api-version: '1.21'
+api-version: '1.17'
 authors: 
   - Alexutzerion5
 description: A powerful chat management plugin
