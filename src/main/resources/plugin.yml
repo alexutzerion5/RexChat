@@ -1,0 +1,4 @@
+name: RexChat
+version: '1.0-SNAPSHOT'
+main: cc.rexsystems.rexChat.RexChat
+api-version: '1.21'
