@@ -19,12 +19,8 @@ public class MuteChatCommand extends BaseCommand {
             return true;
         }
 
-        if (!(sender instanceof Player player)) {
-            sendMessage(sender, "%rc_prefix%&cThis command can only be used by players!");
-            return true;
-        }
-
-        plugin.getChatManager().toggleMute(player);
+        String playerName = sender instanceof Player ? sender.getName() : "Console";
+        plugin.getChatManager().toggleMute(playerName);
         return true;
     }
 } 

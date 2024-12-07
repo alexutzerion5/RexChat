@@ -19,12 +19,8 @@ public class ClearChatCommand extends BaseCommand {
             return true;
         }
 
-        if (!(sender instanceof Player player)) {
-            sendMessage(sender, "%rc_prefix%&cThis command can only be used by players!");
-            return true;
-        }
-
-        plugin.getChatManager().clearChat(player);
+        String playerName = sender instanceof Player ? sender.getName() : "Console";
+        plugin.getChatManager().clearChat(playerName);
         return true;
     }
-} 
+}

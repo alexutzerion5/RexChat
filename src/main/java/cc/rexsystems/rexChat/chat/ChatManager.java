@@ -31,26 +31,23 @@ public class ChatManager implements Listener {
         }
     }
 
-    public void clearChat(Player executor) {
+    public void clearChat(String executor) {
         int lines = plugin.getConfigManager().getConfig().getInt("chat-management.clear.lines", 100);
         
-        // Send empty lines to clear chat
         for (Player player : Bukkit.getOnlinePlayers()) {
             for (int i = 0; i < lines; i++) {
                 player.sendMessage(" ");
             }
         }
 
-        // Send clear message
         String clearMessage = plugin.getConfigManager().getConfig()
             .getString("chat-management.clear.clear-message", "%rc_prefix%&#00ff00The chat has been cleared by {player}");
-        broadcastMessage(clearMessage.replace("{player}", executor.getName()));
+        broadcastMessage(clearMessage.replace("{player}", executor));
     }
 
-    public void toggleMute(Player executor) {
+    public void toggleMute(String executor) {
         chatMuted = !chatMuted;
         
-        // Save mute state to data.yml
         plugin.getDataManager().getData().set("chat.muted", chatMuted);
         plugin.getDataManager().saveData();
         
@@ -58,7 +55,7 @@ public class ChatManager implements Listener {
             plugin.getConfigManager().getConfig().getString("chat-management.mute.mute-announcement", "%rc_prefix%&#ff0000The chat has been muted by {player}") :
             plugin.getConfigManager().getConfig().getString("chat-management.mute.unmute-announcement", "%rc_prefix%&#00ff00The chat has been unmuted by {player}");
         
-        broadcastMessage(message.replace("{player}", executor.getName()));
+        broadcastMessage(message.replace("{player}", executor));
     }
 
     private void sendMessage(Player player, String message) {
@@ -73,7 +70,6 @@ public class ChatManager implements Listener {
         for (Player player : Bukkit.getOnlinePlayers()) {
             player.sendMessage(ColorUtils.parseComponent(message));
         }
-        // Also send to console
         Bukkit.getConsoleSender().sendMessage(ColorUtils.parseComponent(message));
     }
 
