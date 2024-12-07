@@ -1,0 +1,52 @@
+# Maven build directory
+target/
+
+# IntelliJ IDEA files
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Eclipse files
+.classpath
+.project
+.settings/
+bin/
+
+# VS Code files
+.vscode/
+
+# Compiled files
+*.class
+*.jar
+!gradle-wrapper.jar
+
+# Package files
+*.war
+*.ear
+
+# Dependency directories
+dependency-reduced-pom.xml
+
+# Debug logs
+*.log
+
+# Local configuration files
+.DS_Store
+Thumbs.db
+
+# Server test directory
+server/
+
+# Build files
+build/
+out/
+
+# Gradle files
+.gradle/
+gradle/
+gradlew
+gradlew.bat
+
+# Local environment files
+.env 
