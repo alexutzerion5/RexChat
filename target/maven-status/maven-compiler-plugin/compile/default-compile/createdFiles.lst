@@ -1,0 +1,12 @@
+cc\rexsystems\rexChat\commands\CommandConfig.class
+cc\rexsystems\rexChat\RexChat.class
+cc\rexsystems\rexChat\config\ConfigManager.class
+cc\rexsystems\rexChat\commands\admin\RexChatCommand.class
+cc\rexsystems\rexChat\commands\chat\ClearChatCommand.class
+cc\rexsystems\rexChat\commands\DynamicCommand.class
+cc\rexsystems\rexChat\chat\ChatManager.class
+cc\rexsystems\rexChat\data\DataManager.class
+cc\rexsystems\rexChat\commands\BaseCommand.class
+cc\rexsystems\rexChat\commands\chat\MuteChatCommand.class
+cc\rexsystems\rexChat\utils\ColorUtils.class
+cc\rexsystems\rexChat\commands\ChatCommandManager.class

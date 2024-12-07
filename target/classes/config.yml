@@ -1,0 +1,66 @@
+# RexChat Configuration
+
+# Message Settings
+messages:
+  prefix: "&#8b8b8b[&#00ffffRexChat&#8b8b8b] "
+  no-permission: "%rc_prefix%&#ff0000You don't have permission to use this command."
+  reload-success: "%rc_prefix%&#00ff00Configuration reloaded successfully!"
+  command-not-found: "%rc_prefix%&#ff0000Command not found."
+  reload-usage: "%rc_prefix%&#ff0000Usage: /%cmd% reload"
+  player-only: "%rc_prefix%&#ff0000This command can only be used by players!"
+
+# Chat Management Settings
+chat-management:
+  mute:
+    permission: "rexchat.mute"
+    muted-message: "%rc_prefix%&#ff0000The chat is currently muted."
+    mute-announcement: "%rc_prefix%&#ff0000The chat has been muted by {player}"
+    unmute-announcement: "%rc_prefix%&#00ff00The chat has been unmuted by {player}"
+  clear:
+    permission: "rexchat.clear"
+    clear-message: "%rc_prefix%&#00ff00The chat has been cleared by {player}"
+    lines: 100
+
+# Commands Configuration
+commands:
+  discord:
+    enabled: true
+    command: "discord"
+    aliases: ["dc"]
+    permission: ""
+    message-list:
+      - "%rc_prefix%&#5865f2Discord Server"
+      - "&#8b8b8b• &#ffffffJoin our community: &#00aaffhttps://discord.gg/yourserver"
+      - "&#8b8b8b• &#ffffffOnline Members: &#00ff001,234+"
+
+  rules:
+    enabled: true
+    command: "rules"
+    aliases: ["rule"]
+    permission: ""
+    message-list:
+      - "%rc_prefix%&#ff5555Server Rules"
+      - "&#8b8b8b• &#ffffffBe respectful to all players"
+      - "&#8b8b8b• &#ffffffNo spamming or excessive caps"
+      - "&#8b8b8b• &#ffffffNo advertising or self-promotion"
+      - "&#8b8b8b• &#ffffffNo griefing or stealing"
+      - "&#8b8b8b• &#ffffffUse appropriate language"
+
+  store:
+    enabled: true
+    command: "store"
+    aliases: ["shop"]
+    permission: ""
+    message: "%rc_prefix%&#00ff9cStore &#8b8b8b• &#ffffffVisit our store: &#00aaffhttps://store.yourserver.com"
+
+  help:
+    enabled: true
+    command: "help"
+    aliases: ["?"]
+    permission: ""
+    message-list:
+      - "%rc_prefix%&#ffd700Available Commands"
+      - "&#8b8b8b• &#ffa500/discord &#8b8b8b- &#ffffffJoin our Discord community"
+      - "&#8b8b8b• &#ffa500/rules &#8b8b8b- &#ffffffView server rules"
+      - "&#8b8b8b• &#ffa500/store &#8b8b8b- &#ffffffVisit our store"
+      - "&#8b8b8b• &#ffa500/help &#8b8b8b- &#ffffffShow this help message"
