@@ -29,9 +29,9 @@ commands:
     aliases: ["dc"]
     permission: ""
     message-list:
-      - "%rc_prefix%&#5865f2Discord Server"
-      - "&7• &fJoin our community: &#00aaffhttps://discord.gg/yourserver"
-      - "&7• &fOnline Members: &#00ff001,234+"
+      - "%rc_prefix%&#f75634Discord Server"
+      - "&7• &fJoin our community: &#f75634https://discord.gg/yourserver"
+      - "&7• &fOnline Members: &#f756341,234+"
 
   rules:
     enabled: true
@@ -39,7 +39,7 @@ commands:
     aliases: ["rule"]
     permission: ""
     message-list:
-      - "%rc_prefix%&#ff5555Server Rules"
+      - "%rc_prefix%&#f75634Server Rules"
       - "&7• &fBe respectful to all players"
       - "&7• &fNo spamming or excessive caps"
       - "&7• &fNo advertising or self-promotion"
@@ -51,7 +51,7 @@ commands:
     command: "store"
     aliases: ["shop"]
     permission: ""
-    message: "%rc_prefix%&#00ff9cStore &7• &fVisit our store: &#00aaffhttps://store.yourserver.com"
+    message: "%rc_prefix%&#f75634Store &7• &fVisit our store: &#f75634https://store.yourserver.com"
 
   help:
     enabled: true
@@ -59,7 +59,7 @@ commands:
     aliases: ["?"]
     permission: ""
     message-list:
-      - "%rc_prefix%&#ffd700Available Commands"
+      - "%rc_prefix%&#f75634Available Commands"
       - "&7• &#ffa500/discord &7- &fJoin our Discord community"
       - "&7• &#ffa500/rules &7- &fView server rules"
       - "&7• &#ffa500/store &7- &fVisit our store"
